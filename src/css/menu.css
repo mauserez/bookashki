@@ -1,0 +1,52 @@
+#content {
+	aside {
+		gap: 30px;
+		display: flex;
+		flex-direction: column;
+		border-right: $border;
+		height: 100%;
+		padding-right: 15px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		#logo {
+			font-size: 32px;
+			border-radius: $bRadSmall;
+			font-weight: bold;
+			display: flex;
+			gap: 15px;
+			padding-left: 15px;
+			cursor: pointer;
+
+			&:hover {
+				i {
+					transform: scale(1.3);
+				}
+			}
+
+			i {
+				transition: transform 0.3s;
+			}
+		}
+
+		.nav {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			&__item {
+				padding: 15px;
+				border-radius: $bRadSmall;
+				font-size: 20px;
+				cursor: pointer;
+				transition: background-color 0.3s;
+
+				&:hover,
+				&-active {
+					background-color: $darkBack;
+					color: $whiteColor;
+				}
+			}
+		}
+	}
+}

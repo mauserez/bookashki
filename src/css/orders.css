@@ -1,0 +1,147 @@
+$ticketBack: #f9f9f9;
+
+.order-list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	.order-ticket {
+		display: flex;
+		flex-direction: column;
+		border: $border;
+		border-radius: $bRadLarge;
+
+		&__title {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			background-color: $ticketBack;
+			padding: 15px;
+			border-radius: $bRadLarge;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			&__name {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				gap: 8px;
+			}
+
+			&__dt {
+				font-size: 18px;
+			}
+
+			&__id {
+				font-size: 14px;
+			}
+
+			&__price {
+				font-size: 18px;
+
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&__body {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding: 15px;
+			gap: 30px;
+
+			.order-ticket__status {
+			}
+
+			.order-ticket__items {
+				display: flex;
+				gap: 15px;
+				flex-wrap: wrap;
+
+				.order-ticket__item {
+					display: block;
+					width: 90px;
+					height: 120px;
+					background-position: 0 0;
+					background-size: cover;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.order-card {
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item-count {
+		padding-bottom: 15px;
+		color: $inputColor;
+	}
+
+	&__item-info {
+		padding: 15px;
+		border-radius: $bRadLarge;
+		border: $border;
+
+		.order-item-list {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+
+			.order-item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 15px;
+
+				&__img {
+					width: 120px;
+					height: 160px;
+					background-size: cover;
+				}
+
+				&__price {
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+				}
+
+				&__detail-price {
+					color: $secondaryColor;
+				}
+
+				.order-item__btns {
+					display: flex;
+					gap: 15px;
+
+					.book-buttons__cart {
+						display: flex;
+						align-items: center;
+						gap: 5px;
+					}
+
+					.action-btn {
+						border: $border;
+					}
+
+					.book-buttons__favourite {
+						font-size: 19px;
+					}
+				}
+			}
+		}
+	}
+}
+/*
+#content main .main-content .order-wrap .book-cart-counter {
+	display: none;
+}
+ */

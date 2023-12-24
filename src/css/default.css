@@ -1,0 +1,172 @@
+$bRadSmall: 9px;
+$bRadLarge: 13px;
+$border: 1px solid #eaeaea;
+$primaryColor: #333;
+$secondaryColor: #777;
+$inputColor: #444;
+$whiteColor: #fff;
+$heartColor: red;
+
+$inputBack: #f9f9f9;
+$whiteBack: #fff;
+$darkBack: #222;
+$shadowBack: #777;
+
+$primaryBack: #2263dc;
+$successBack: #26bd08;
+$warningBack: #deb317;
+$dangerBack: #d82626;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #dde1e5;
+	height: 100vh;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	color: $primaryColor;
+}
+
+input {
+	color: $inputColor;
+	background-color: $inputBack;
+	border: $border;
+	padding: 15px;
+	padding-top: 12px;
+	border-radius: $bRadLarge;
+	font-size: 18px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.full-width {
+	width: 100vw;
+}
+
+.action-btn {
+	height: 36px;
+	width: 36px;
+	font-size: 24px;
+	color: $primaryColor;
+	background-color: $whiteBack;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	position: relative;
+	cursor: pointer;
+}
+
+.action-btn__circle {
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	font-size: 13px;
+	background-color: #333333;
+	color: $whiteColor;
+	padding: 3px 5px;
+	border-radius: 13px;
+	min-width: 20px;
+	min-height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: $whiteBack;
+	height: 100vh;
+}
+
+#content {
+	display: grid;
+	grid-template-columns: 350px 1fr;
+	row-gap: 30px;
+	column-gap: 0;
+	height: 100%;
+	border-bottom: $border;
+
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 0 15px 30px 30px;
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+
+		&::-webkit-scrollbar-track {
+			box-shadow: $whiteBack;
+			border-radius: 10px;
+		}
+
+		.main-content {
+			margin-top: -30px;
+		}
+	}
+}
+
+footer {
+	font-size: 12px;
+}
+
+.animate__poof {
+	transform: scale(0.95);
+}
+
+.hidden {
+	display: none;
+}
+
+button {
+	border: none;
+	min-height: 50px;
+	padding: 8px 12px;
+	font-size: 18px;
+	border-radius: $bRadLarge;
+	cursor: pointer;
+
+	&.btn-danger {
+		color: $whiteColor;
+		background-color: $dangerBack;
+	}
+
+	&.btn-success {
+		color: $whiteColor;
+		background-color: $successBack;
+	}
+
+	&.btn-primary {
+		color: $whiteColor;
+		background-color: $primaryBack;
+	}
+}
+
+.align-self-start {
+	align-self: flex-start;
+}
+
+.align-self-end {
+	align-self: flex-end;
+}
+
+.cursor-default {
+	cursor: default;
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		width: 100vw;
+	}
+}

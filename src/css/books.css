@@ -1,0 +1,103 @@
+#content {
+	main {
+		.main-content {
+			.book-list {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 230px));
+				grid-auto-rows: auto;
+				gap: 30px;
+			}
+
+			.book-cart-counter {
+				min-width: 20px;
+				display: flex;
+				justify-content: center;
+			}
+
+			.book-list__item {
+				display: flex;
+				flex-direction: column;
+				transition: transform 0.3s;
+				cursor: pointer;
+				border-radius: $bRadLarge;
+				position: relative;
+
+				&:hover {
+					transform: scale(1.008);
+					box-shadow: 0 0 20px $shadowBack;
+				}
+
+				.book-price {
+					background-color: $whiteBack;
+					font-size: 19px;
+				}
+
+				.book-info {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					border: $border;
+					border-bottom: none;
+					padding: 8px;
+					border-top-left-radius: 13px;
+					border-top-right-radius: 13px;
+					flex-wrap: wrap;
+					gap: 5px;
+					flex: 1;
+					justify-content: space-between;
+
+					.book-info__name {
+						font-size: 17px;
+					}
+
+					.book-info__author {
+						font-size: 14px;
+						display: flex;
+						gap: 10px;
+						align-items: center;
+						padding-top: 5px;
+
+						i {
+							font-size: 17px;
+						}
+					}
+				}
+
+				.book-img {
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					height: 210px;
+				}
+
+				.book-buttons {
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+					padding: 15px;
+					color: $whiteColor;
+					align-self: flex-end;
+					background-color: $darkBack;
+					border-bottom-left-radius: $bRadLarge;
+					border-bottom-right-radius: $bRadLarge;
+
+					&__cart {
+						display: flex;
+						gap: 12px;
+						align-items: center;
+					}
+
+					&__favourite.action-btn {
+						display: flex;
+						font-size: 20px;
+
+						&.active {
+							color: $heartColor;
+							background-color: $whiteColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+{
+  "favourite": [
+    {
+      "book_id": 2,
+      "id": 1
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "book_name": "Чужой",
+      "author_name": "Алан Дин Фостер",
+      "source": "assets/book_images/alien.jpg",
+      "price": 1540,
+      "category_id": 2
+    },
+    {
+      "id": 2,
+      "book_name": "Дюна",
+      "author_name": "Фрэнк Герберт",
+      "source": "assets/book_images/dune.jpg",
+      "price": 1250,
+      "category_id": 3
+    },
+    {
+      "id": 3,
+      "book_name": "Гарри Поттер и Филосовский Камень",
+      "author_name": "Джоан Роулинг",
+      "source": "assets/book_images/harry.jpg",
+      "price": 1820,
+      "category_id": 4
+    },
+    {
+      "id": 4,
+      "book_name": "Хищник",
+      "author_name": "Голден Моррис",
+      "source": "assets/book_images/predator.jpg",
+      "price": 1120,
+      "category_id": 2
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "items": [
+        {
+          "book_id": 1,
+          "book_name": "Чужой",
+          "author_name": "Алан Дин Фостер",
+          "source": "assets/book_images/alien.jpg",
+          "price": 1540,
+          "category_id": 2,
+          "id": 1
+        },
+        {
+          "book_id": 2,
+          "book_name": "Дюна",
+          "author_name": "Фрэнк Герберт",
+          "source": "assets/book_images/dune.jpg",
+          "price": 1250,
+          "category_id": 3,
+          "id": 2
+        }
+      ],
+      "dateTimeStamp": 1699272479,
+      "statusId": "1",
+      "date": "",
+      "price": 2790,
+      "id": 1
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "category_name": "Все"
+    },
+    {
+      "id": 2,
+      "category_name": "Фантастика"
+    },
+    {
+      "id": 3,
+      "category_name": "Стихи"
+    },
+    {
+      "id": 4,
+      "category_name": "Проза"
+    }
+  ]
+}

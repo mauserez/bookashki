@@ -1,0 +1,56 @@
+.cart-list {
+	display: grid;
+	width: 100%;
+	gap: 30px;
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.cart-item {
+			&__img {
+				background-size: cover;
+				width: 150px;
+				height: 200px;
+			}
+
+			&__btn-wrap {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+
+				.book-buttons__cart {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+				}
+				.book-buttons__favourite.active {
+					color: $heartColor;
+					background-color: $whiteColor;
+				}
+
+				.action-btn {
+					border: $border;
+				}
+
+				.book-buttons__favourite {
+					font-size: 19px;
+				}
+			}
+		}
+	}
+}
+
+.cart__sub-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.cart__main-buttons {
+	display: flex;
+	gap: 15px;
+}
